@@ -1,38 +1,6 @@
 <?php
 
-//======================================================================
-// CPANEL FULL BACKUP SCRIPT
-//======================================================================
-
-//-----------------------------------------------------
-// Copied and Pasted from everywhere.
-//-----------------------------------------------------
-
-/* This is the main script file */
-
-# 1 - Edit clients/example.com.php and create folder backups/domainname.com
-#
-# 2 - Edit /scripts/include/ftp.php and /scripts/include/notification.php
-#
-# 3 - Add to crontab
- 
-
-/*	Detailed how-to
-*       ---------------
-*
-*   1 	mv clients/example.com.php clients/yourdomain.com
-*  		nano clients/yourdomain.com
-*   2	nano /scripts/include/ftp.php
-*  	   	nano /scripts/include/notification.php
-*	3	crontab -e
-*       0 0 * * * /path/to/php -q /path/to/run-backup.php
-*/
-
-// This is a single line quote.
-?>
-
-	// Get HOME directory
-	$home = $_SERVER['HOME'];
+	include "scripts/serverinfo.php";
 
 	// Declare client folder
 	$client = $home . "/clients/";
