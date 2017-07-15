@@ -62,6 +62,6 @@
 		closedir($handle);
 	}
 	
-    mail("email@example.com","cPanel Backup Script","Completed");
+    mail($notifyemail,"cPanel Backup Script","Completed");
 
 ?>
