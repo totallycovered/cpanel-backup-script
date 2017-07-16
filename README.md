@@ -1,2 +1,4 @@
 # cpanel-backup-script
-A little better back script for cpanel. Include multiple sites.
+A little better back script for cpanelbackups than before. 
+
+- Includes multiple site support.
