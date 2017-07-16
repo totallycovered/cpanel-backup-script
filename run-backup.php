@@ -12,6 +12,9 @@
 			if ('..' === $file) continue;
 	
 			// Includes
+			//
+			// Test FTP site and create backup location
+			include ftpcheck.php;
 			// Include current client script
       			include $home . '/clients/' . $file;
 			// Include remote FTP config
