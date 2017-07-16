@@ -14,7 +14,7 @@
 	$authstr = $cpuser.":".$cppass;
 	$pass = base64_encode($authstr);
 	
-	$params = "dest=$ftpmode&email=$notifyemail&server=$ftphost&user=$ftpuser&pass=$ftppass&port=$ftpport&rdir=backups/$domain&submit=Generate Backup";
+	$params = "dest=$ftpmode&email=$notifyemail&server=$ftphost&user=$ftpuser&pass=$ftppass&port=$ftpport&rdir=$ftpdir&submit=Generate Backup";
 	
 	// Make POST to cPanel
 	fputs($socket,"POST /frontend/".$skin."/backup/dofullbackup.html?".$params." HTTP/1.0\r\n");
