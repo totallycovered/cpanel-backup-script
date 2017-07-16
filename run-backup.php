@@ -1,9 +1,9 @@
 <?php
 
-	include "scripts/serverinfo.php";
+	include "include/serverinfo.php";
+	include "config/variables.conf";
 
-	// Declare client folder
-	$client = $home . "/clients/";
+
   	
 	// Cycle through each client script
 	if ($handle = opendir($client)) {
