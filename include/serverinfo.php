@@ -1,6 +1,7 @@
 <?php
 
-  // Declare client folder
+  	// Declare client folder
 	$client = $home . "/clients/";
+	$ftpdir = $home . $domain;
   
  ?>
