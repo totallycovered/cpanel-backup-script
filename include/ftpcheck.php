@@ -1,9 +1,12 @@
 <?php
 
-// set up basic connection
-$conn_id = ftp_connect($ftphost, $ftpport);
+// Usable $trings
+// $ftpuser $ftppass $ftphost $ftpmode $ftpport $ftpdir $notifyemail
 
-// login with username and password
+// Set up FTP connection and test.
+$conn_id = ftp_connect($ftphost, $ftpport) or die("Couldn't connect to FTP server.");
+
+// TEst FTP login
 $login_result = ftp_login($conn_id, $ftpuser, $ftppass);
 
 // try to create the directory $ftpdir
